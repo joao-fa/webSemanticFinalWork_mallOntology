@@ -29,7 +29,7 @@ function Navbar() {
             <nav className='navbar'>
                 <div className='navbar-container'>
                     <Link to="/" className='navbar-logo' onClick={closeMobileMenu}>
-                        ShoppingMall <i className='fab fa-typo3' />
+                        Shopping KJP <i className='fab fa-typo3' />
                     </Link>
                     <div className="menu-icon" onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -37,7 +37,7 @@ function Navbar() {
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
                             <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                                Home
+                                Início
                             </Link>
                         </li>
                         <li className='nav-item'>
@@ -46,7 +46,7 @@ function Navbar() {
                                 className='nav-links'
                                 onClick={closeMobileMenu}
                             >
-                                Map
+                                Mapa
                             </Link>
                         </li>
                         <li className='nav-item'>
@@ -55,7 +55,7 @@ function Navbar() {
                                 className='nav-links'
                                 onClick={closeMobileMenu}
                             >
-                                Products
+                                Produtos
                             </Link>
                         </li>
                         <li className='nav-item'>
@@ -64,7 +64,7 @@ function Navbar() {
                                 className='nav-links'
                                 onClick={closeMobileMenu}
                             >
-                                Stores
+                                Lojas
                             </Link>
                         </li>
                         <li>
@@ -73,11 +73,11 @@ function Navbar() {
                                 className='nav-links-mobile'
                                 onClick={closeMobileMenu}
                             >
-                                Sign Up
+                                Entrar
                             </Link>
                         </li>
                     </ul>
-                    {button && <Button buttonStyle='btn--outline'>Sign Up</Button>}
+                    {button && <Button buttonStyle='btn--outline'>Entrar</Button>}
                 </div>
             </nav>
         </>
