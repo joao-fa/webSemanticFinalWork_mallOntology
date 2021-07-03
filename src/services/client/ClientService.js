@@ -12,6 +12,10 @@ class ClientService {
       }
     });
   }
+
+  logout() {
+    localStorage.removeItem("user");
+  }
 }
 
 export default new ClientService();
