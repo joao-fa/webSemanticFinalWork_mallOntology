@@ -4,28 +4,27 @@ const BASE_API_PATH = "/api/stores";
 
 class StoreService {
 
-  findAllStores() {
-    return ServerApi.get(BASE_API_PATH + "/all");
-  }
+  /*
+  searchType: modo de pesquisa, podendo assumir os seguintes valores:
+     -> ALL          (busca por todas as lojas)
+     -> ALL_ORDERED  (busca por todas as lojas de forma ordenada)
+     -> BY_NAME      (busca por uma loja pelo nome)
+     -> BY_CATEGORY  (busca por todas as lojas de uma categoria)
 
-  findAllStoresOrderByName() {
-    return ServerApi.get(BASE_API_PATH + "/all-ordered");
-  }
+  identifier: valor digitado pelo usuário
+     -> No modo ALL,          mandar qualquer valor no identifier
+     -> No modo ALL_ORDERED,  mandar qualquer valor no identifier
+     -> No modo BY_NAME,      mandar o nome pesquisado pelo usuário
+     -> No modo BY_CATEGORY,  mandar a categoria pesquisada pelo usuário
+   */
 
-  findStoreByName(storeName) {
-    return ServerApi.get(BASE_API_PATH + "/by-name", {
+  findByIdentifier(identifier, searchType) {
+    return ServerApi.get(BASE_API_PATH, {
       params: {
-        storeName
+        identifier,
+        searchType
       }
-    });
-  }
-
-  findAllStoresByCategory(category) {
-    return ServerApi.get(BASE_API_PATH + "/all-by-category", {
-      params: {
-        category
-      }
-    });
+    })
   }
 }
 

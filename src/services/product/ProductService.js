@@ -4,24 +4,26 @@ const BASE_API_PATH = "/api/products";
 
 class ProductService {
 
-  findAllAvailableProducts() {
-    return ServerApi.get(BASE_API_PATH + "/all");
-  }
+  /*
+  searchType: modo de pesquisa, podendo assumir os seguintes valores:
+     -> ALL          (busca por todos os produtos)
+     -> BY_CATEGORY  (busca por todos os produtos de uma categoria)
+     -> BY_STORE     (busca por todos os produtos de uma loja)
 
-  findAllAvailableProductsByCategory(category) {
-    return ServerApi.get(BASE_API_PATH + "/all-by-category", {
-      params: {
-        category
-      }
-    });
-  }
+  identifier: valor digitado pelo usuário
+     -> No modo ALL,          mandar qualquer valor no identifier
+     -> No modo BY_CATEGORY,  mandar a categoria pesquisada pelo usuário
+     -> No modo BY_STORE,     mandar o nome da loja pesquisado pelo usuário
 
-  findAllAvailableProductsByStore(storeName) {
-    return ServerApi.get(BASE_API_PATH + "/all-by-store", {
+ */
+
+  findByIdentifier(identifier, searchType) {
+    return ServerApi.get(BASE_API_PATH, {
       params: {
-        storeName
+        identifier,
+        searchType
       }
-    });
+    })
   }
 
   findAllUserPreferences(email) {
