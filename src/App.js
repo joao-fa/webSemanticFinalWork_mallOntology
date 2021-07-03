@@ -5,6 +5,7 @@ import './App.css';
 import Home from './components/pages/Home';
 import Login from "./components/pages/login/Login";
 import Store from "./components/pages/stores/Store";
+import Map from "./components/pages/Map/Map";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path='/' exact component={Home} />
           <Route path='/entrar' exact component={Login} />
           <Route path='/lojas' exact component={Store} />
+          <Route path='/mapa' exact component={Map} />
         </Switch>
       </Router>
     </>
