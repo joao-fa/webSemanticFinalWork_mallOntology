@@ -1,18 +1,13 @@
 import React from 'react'
 import './Store.css'
 import useStore from "./storeLogic";
+import StoreCard from "./StoreCard";
 
 function Store() {
-  const [{searchType, identifier, loading, stores}, search, handleIdentifierChange, handleSearchTypeChange] = useStore();
+  const [{searchType, identifier, stores}, search, handleIdentifierChange, handleSearchTypeChange] = useStore();
 
   function showStore(store) {
-    return <div>
-      <p>Nome: {store.name}</p>
-      <p>Site: {store.site}</p>
-      <p>Corredor: {store.hall}</p>
-      <p>Posição: {store.position}</p>
-      <br/>
-    </div>
+    return <StoreCard name={store.name} site={store.site} hall={store.hall} position={store.position}/>
   }
 
   return (
@@ -54,7 +49,7 @@ function Store() {
         </div>
       </div>
 
-      <div>
+      <div className="stores-container">
         {stores.map(showStore)}
       </div>
     </div>

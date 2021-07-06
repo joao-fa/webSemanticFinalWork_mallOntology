@@ -9,7 +9,7 @@
 }
 
 .filter-box {
-    background-color: #e8e8e4;
+    background-color: #ced4da;
     padding: 5px;
     border-radius: 4px;
     color: black;
@@ -34,7 +34,7 @@
     margin: 0 15px 10px;
     border-radius: 4px;
     text-decoration: none;
-    border: none;
+    border: 1px solid gray;
     outline: none;
     padding-left: 10px;
 }
@@ -49,4 +49,11 @@
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
+}
+
+.stores-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
