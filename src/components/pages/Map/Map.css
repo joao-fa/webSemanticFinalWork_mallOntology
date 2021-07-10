@@ -1,37 +1,46 @@
-.input-map {
-    width: 350px;
-    height: 30px;
-    border-radius: 8px;
-    border: none;
-    margin-top: 10px;
-    margin-bottom: 14px;
-    margin-left: 100px;
+.map-container{
+    width: 900px;
+    margin: 30px auto;
 }
 
-.form-map {
+.map-select{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.map-select>span{
+    color: white;
+    margin-right: 5px;
+}
+
+.map-image-container{
+    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    margin-top: 20px;
 }
 
-.label-map {
-    margin-left: 100px;
-}
-
-.button-map {
-    height: 46px;
-    margin-top: 14px;
-    margin-left: 100px;
-    margin-right: 100px;
-    background-color: rgb(218, 255, 6);
-    border-radius: 8px;
-    border: 1px solid rgb(8, 68, 6);
-    box-shadow: 1px 2px 3px #252525aa;
-    font-size: 15px;
-}
-
-.error {
-    font-size: 12px;
-    color: rgb(122, 12, 22);
+.map-image-container>p{
+    color: white;
     margin-bottom: 10px;
+}
+
+.map-preferences{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: -8px;
+}
+
+.map-preferences-container{
+    width: 100%;
+}
+
+.map-preferences-container>p{
+    color: white;
+    margin-top: 30px;
+    text-align: center;
 }

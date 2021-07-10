@@ -12,7 +12,6 @@ export const Button = ({
     onclick, 
     buttonStyle, 
     buttonSize,
-    loggedIn
 }) => {
     const checkButtonStyle = STYLES.includes(buttonStyle)
     ? buttonStyle
@@ -22,21 +21,11 @@ export const Button = ({
     ? buttonSize 
     : SIZES[0];
 
-    if (!loggedIn) {
-        return( 
-            <Link to='/entrar' className='btn-mobile'>
-                <button className={`btn ${checkButtonStyle} ${checkButtonSize}`} onClick={onclick} type={type}>
-                    {children}
-                </button>
-            </Link>
-        )
-    } else {
-        return(
-            <Link to='/mapa' className='btn-mobile'>
-                <button className={`btn ${checkButtonStyle} ${checkButtonSize}`} onClick={onclick} type={type}>
-                    {children}
-                </button>
-            </Link>
-        )
-    }
+    return(
+        <Link to='/mapa' className='btn-mobile'>
+            <button className={`btn ${checkButtonStyle} ${checkButtonSize}`} onClick={onclick} type={type}>
+                {children}
+            </button>
+        </Link>
+    )
 };

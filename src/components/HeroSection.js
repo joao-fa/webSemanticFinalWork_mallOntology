@@ -14,7 +14,6 @@ function HeroSection() {
                     className='btns' 
                     buttonStyle='btn--primary' 
                     buttonSize='btn--large'
-                    loggedIn='a'
                 >
                     Encontre sua loja agora! <i className='far fa-play-circle' />
                 </Button>
