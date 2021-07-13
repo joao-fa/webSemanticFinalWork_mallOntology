@@ -5,9 +5,10 @@ import ProductCard from "./ProductCard";
 
 function Product() {
   const [{searchType, identifier, products}, search, handleIdentifierChange, handleSearchTypeChange] = useProduct();
+  const productsList = JSON.parse(localStorage.getItem("products")) == null ? [] :JSON.parse(localStorage.getItem("products"));
 
   function showProduct(product) {
-    return <ProductCard name={product.name} price={product.price} description={product.description} stock={product.stock} storeName={product.storeName}/>
+    return <ProductCard name={product.name} price={product.price} description={product.description} stock={product.stock} storeName={product.storeName} productList={productsList} />
   }
 
   return (

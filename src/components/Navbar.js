@@ -72,6 +72,12 @@ function Navbar() {
                 Lojas
               </Link>
             </li>
+            
+            <li className='nav-item'>
+              <Link to='/carrinho' className='nav-links' onClick={closeMobileMenu}>
+                Carrinho
+              </Link>
+            </li>
 
             <li>
               {!currentUser && (

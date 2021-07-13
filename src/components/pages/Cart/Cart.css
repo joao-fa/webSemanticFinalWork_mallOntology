@@ -1,0 +1,31 @@
+
+.cart-container > h3 {
+    text-align: center;
+    color: red;
+
+}
+
+.finalize-box {
+    background-color: #ced4da;
+    margin-top: 200px;
+    display: flex;
+    height: 50px;
+    padding: 5px;
+    border-radius: 4px;
+    color: black;
+}
+.cart-finalize {
+    justify-content: flex-end;
+    display: inline-flexbox;
+}
+
+.cart-finalize-button {
+    
+    background-color: #0096c7;
+    color: #FFFFFF;
+    border-radius: 4px;
+    text-decoration: none;
+    min-width: 150px;
+    line-height: 30px;
+    text-align: center;
+}

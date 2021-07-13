@@ -6,6 +6,7 @@ import Home from './components/pages/Home';
 import Login from "./components/pages/login/Login";
 import Product from "./components/pages/products/Product";
 import Store from "./components/pages/stores/Store";
+import Cart from "./components/pages/Cart/Cart";
 import Map from "./components/pages/Map/Map";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path='/' exact component={Home} />
           <Route path='/entrar' exact component={Login} />
           <Route path='/produtos' exact component={Product} />
+          <Route path='/carrinho' exact component={Cart} />
           <Route path='/lojas' exact component={Store} />
           <Route path='/mapa' exact component={Map} />
         </Switch>
