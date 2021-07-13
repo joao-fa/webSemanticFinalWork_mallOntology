@@ -25,19 +25,19 @@ function Map() {
             <div className={'map-image-container'}>
                 <p> Este é o caminho para a {storeName} </p>
                 {storeName === 'Apple' && (
-                    <img src={process.env.PUBLIC_URL + '/images/img-1.jpg'} width={500} height={300} alt={'mapa_da_Apple'}/>
+                    <img src={process.env.PUBLIC_URL + '/images/path_to_apple.png'} width={500} height={300} alt={'mapa_da_Apple'}/>
                 )}
                 {storeName === 'Boticário' && (
-                    <img src={process.env.PUBLIC_URL + '/images/img-2.jpg'} width={500} height={300} alt={'mapa_da_Boticário'}/>
+                    <img src={process.env.PUBLIC_URL + '/images/path_to_boticario.png'} width={500} height={300} alt={'mapa_da_Boticário'}/>
                 )}
                 {storeName === 'C&A' && (
-                    <img src={process.env.PUBLIC_URL + '/images/img-3.jpg'} width={500} height={300} alt={'mapa_da_C&A'}/>
+                    <img src={process.env.PUBLIC_URL + '/images/path_to_cea.png'} width={500} height={300} alt={'mapa_da_C&A'}/>
                 )}
                 {storeName === 'Renner' && (
-                    <img src={process.env.PUBLIC_URL + '/images/img-4.jpg'} width={500} height={300} alt={'mapa_da_Renner'}/>
+                    <img src={process.env.PUBLIC_URL + '/images/path_to_renner.png'} width={500} height={300} alt={'mapa_da_Renner'}/>
                 )}
                 {storeName === 'Saraiva' && (
-                    <img src={process.env.PUBLIC_URL + '/images/img-5.jpg'} width={500} height={300} alt={'mapa_da_Saraiva'}/>
+                    <img src={process.env.PUBLIC_URL + '/images/path_to_saraiva.png'} width={500} height={300} alt={'mapa_da_Saraiva'}/>
                 )}
             </div>
             <div className={'map-preferences-container'}>
