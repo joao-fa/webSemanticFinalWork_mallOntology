@@ -23,7 +23,7 @@ function Cart() {
   }
 
   function finishBuyout(){
-    localStorage.clear();
+    localStorage.removeItem("products");
     window.location.reload();
   }
 

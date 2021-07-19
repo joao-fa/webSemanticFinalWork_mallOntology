@@ -6,8 +6,9 @@ import ProductCard from '../products/ProductCard'
 function Map() {
 
     const [{stores, storeName, preferences}, handleStoreNameChange] = useMap();
+    const productsList = JSON.parse(localStorage.getItem("products")) == null ? [] :JSON.parse(localStorage.getItem("products"));
     function renderProduct(product) {
-        return <ProductCard key={product.name} name={product.name} price={product.price} description={product.description} stock={product.stock} storeName={product.storeName}/>
+        return <ProductCard key={product.name} name={product.name} price={product.price} description={product.description} stock={product.stock} storeName={product.storeName} productList={productsList}/>
     }
 
     return (

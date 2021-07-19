@@ -1,3 +1,9 @@
+.cart-container{
+    display: flex;
+    max-width: 900px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .cart-container > h3 {
     text-align: center;
@@ -7,12 +13,14 @@
 
 .finalize-box {
     background-color: #ced4da;
-    margin-top: 200px;
-    display: flex;
     height: 50px;
-    padding: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
     border-radius: 4px;
     color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .cart-finalize {
     justify-content: flex-end;
