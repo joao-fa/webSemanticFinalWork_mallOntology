@@ -1,0 +1,39 @@
+.cart-container{
+    display: flex;
+    max-width: 900px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cart-container > h3 {
+    text-align: center;
+    color: red;
+
+}
+
+.finalize-box {
+    background-color: #ced4da;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cart-finalize {
+    justify-content: flex-end;
+    display: inline-flexbox;
+}
+
+.cart-finalize-button {
+    
+    background-color: #0096c7;
+    color: #FFFFFF;
+    border-radius: 4px;
+    text-decoration: none;
+    min-width: 150px;
+    line-height: 30px;
+    text-align: center;
+}

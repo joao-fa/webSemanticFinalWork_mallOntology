@@ -1,0 +1,46 @@
+.map-container{
+    width: 900px;
+    margin: 30px auto;
+}
+
+.map-select{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.map-select>span{
+    color: white;
+    margin-right: 5px;
+}
+
+.map-image-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.map-image-container>p{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.map-preferences{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: -8px;
+}
+
+.map-preferences-container{
+    width: 100%;
+}
+
+.map-preferences-container>p{
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+}
